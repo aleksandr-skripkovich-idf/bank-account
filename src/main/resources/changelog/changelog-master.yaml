@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "aleksandr"
+      changes:
+        - sqlFile:
+            path: create-user-table.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: create-account-table.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: create-email-data-table.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: create-phone-data-table.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: "2"
+      author: "aleksandr"
+      changes:
+        - sqlFile:
+            path: init-user-table.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: init-account-table.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: init-phone-table.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: init-email-table.sql
+            relativeToChangelogFile: true
